@@ -6,7 +6,7 @@ const sinon = require("sinon");
 const { fileContainsClass } = require("./helpers");
 
 const phaseModulePath = "../classes/friendly-dragon.js";
-const FriendlyDragon = require(phaseModulePath);
+const { FriendlyDragon } = require(phaseModulePath);
 
 const filePath = path.resolve(__dirname, phaseModulePath);
 const fileContainsClassResult = fileContainsClass(
@@ -39,7 +39,7 @@ describe("FriendlyDragon class", () => {
   });
 
   it("is a child of the `Dragon` parent class", () => {
-    const Dragon = require("../classes/dragon");
+    const { Dragon } = require("../classes/dragon");
     expect(new FriendlyDragon()).to.be.an.instanceOf(Dragon);
   });
 

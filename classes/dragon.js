@@ -23,7 +23,7 @@ class Dragon {
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 try {
-  module.exports = Dragon;
+  module.exports = { Dragon };
 } catch {
   module.exports = null;
 }
