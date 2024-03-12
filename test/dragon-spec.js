@@ -4,7 +4,7 @@ const expect = chai.expect;
 const { fileContainsClass } = require("./helpers");
 
 const problemModulePath = "../classes/dragon.js";
-const Dragon = require(problemModulePath);
+const { Dragon } = require(problemModulePath);
 
 const filePath = path.resolve(__dirname, problemModulePath);
 const fileContainsClassResult = fileContainsClass(filePath, "Dragon");
